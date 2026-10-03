@@ -1,0 +1,5 @@
+Options -Indexes
+RewriteEngine On
+
+RewriteRule ^(?:\.gitignore|schema\.sql|config\.local\.php)$ - [F,L,NC]
+RewriteRule ^api/(?:contact|health)\.php$ - [L]
